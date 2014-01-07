@@ -1,7 +1,7 @@
-if(settings.googleAnalyticsCode)
+if(settings.googleanalytics.trackingCode)
   script.
     var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', '#{settings.googleAnalyticsCode}']);
+    _gaq.push(['_setAccount', '#{settings.googleanalytics.trackingCode}']);
     _gaq.push(['_trackPageview']);
       (function() {
       var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
